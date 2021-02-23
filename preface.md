@@ -258,7 +258,70 @@ GitHub Pages is designed to host your personal, organization, or project pages f
 
 或者有其他报错问题，遇到再修改！**要保证：**每提交一次修改，最后都要在github-setting中看是否有错误。
 
+## Git命令
 
+安装git工具软件，该软件为`Git-2.26.2-64-bit.exe`
+
+**1. 安装软件之后，连接github账户**
+
+- 鼠标右键单击，选择`Git GUI Here`
+
+- 点击菜单栏`Help`，选择`Show SSH Key`
+
+- 点击右上角`Generate Key`，把代码复制
+
+- 在GitHub网页创建仓库，点击用户账号头像下的`Setting`
+
+- 选择左侧的`SSH and GPG keys`
+
+- 在`SSH keys`部分点击`New SSH key`，把在`Generate Key`复制的代码，粘贴到这里，点击`Add SSH key`
+
+- 选择一个合适的目录（文件夹），在这里右键打开`Git Bash Here`，输入如下代码：
+
+  ```
+  git config --global user.name "用户名"
+  ```
+
+  ```
+  git config --global user.email "邮箱"
+  ```
+
+  
+
+
+
+**2. 克隆云端仓库到本地**
+
+克隆云端仓库，如果是空仓库，进入就会看到链接。如果不是空仓库，就点击`Code`，下面就会弹出链接
+
+```
+git clone https://github.com/life696/life696.github.io.git
+git clone git@github.com:life696/life696.github.io.git
+```
+
+以上两条选择一个，`https`的不行，就用`SSH`的
+
+**3. 本地的修改文件后，推送到云端**
+
+添加修改的文件：
+
+- 添加某个文件：`git add a.c`   
+- 添加所有文件：`git add .`  
+
+提交本次修改信息：`git commit -m "备注信息"`
+
+上传到云仓库master分支：`git push origin master`
+
+查看是否还有未提交的：`git status`
+
+```
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+(use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+```
 
 ## 要整理的内容
 
