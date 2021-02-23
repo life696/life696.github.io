@@ -217,9 +217,9 @@ Github仓库上的图片，加载的速度还可以，但是手机端不显示..
 
 **1. 修改了_includes\templates\addons.liquid**
 
-删除了左边栏最下面的小窗口
+删除`addons.liquid`和`addons.scss`，删除左边栏最下面的小窗口
 
-**1. 修改了_includes\templates\footer.liquid**
+**2. 修改了_includes\templates\footer.liquid**
 
 修改了底部内容
 
