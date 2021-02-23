@@ -286,9 +286,6 @@ GitHub Pages is designed to host your personal, organization, or project pages f
   git config --global user.email "邮箱"
   ```
 
-  
-
-
 
 **2. 克隆云端仓库到本地**
 
@@ -302,6 +299,8 @@ git clone git@github.com:life696/life696.github.io.git
 以上两条选择一个，`https`的不行，就用`SSH`的
 
 **3. 本地的修改文件后，推送到云端**
+
+三合一直接推送到云端：`git add . && git commit -m "更新" && git push origin master`
 
 添加修改的文件：
 
