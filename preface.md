@@ -1,0 +1,274 @@
+# 前言
+
+[TOC]
+
+把学习到的知识全都总结、整理到这里，方便以后查阅、复习
+
+
+
+
+
+## 网页手册链接
+
+[正点原子资料下载中心](http://www.openedv.com/docs/index.html#)
+
+[linux 5.11 内核文档](https://www.kernel.org/doc/html/latest/index.html)
+
+[Linux内核代码风格](https://www.kernel.org/doc/html/latest/translations/zh_CN/process/coding-style.html)
+
+[蒲慕明：博士研究生如何做创新性研究](http://www.360doc.com/content/19/0407/10/7151997_826951162.shtml)
+
+[百问网资料中心](http://download.100ask.net/index.html)
+
+## 本博客操作说明
+
+### 本博客主题
+
+本博客使用Github提供的github page，和[jekyll主题模版](http://jekyllthemes.org/)配合使用，步骤如下：
+
+**1. 注册 Github 账号，安装登陆github desktop**
+
+**2. 在 Github 上创建仓库并且设置**
+
+网页创建仓库、同步仓库到本地、网页进入仓库、选择Setting，设置GitHub Pages（main、root）、把主题模板复制到本地仓库根目录，同步上去即可
+
+**3. 打开博客**
+
+在Setting中的GitHub Pages下，可以看到链接，其实就是仓库的地址。为了方便仓库的名字可以设置为：Github用户名.github.io。我的仓库名是`life696.github.io`，我的链接是`https://life696.github.io/`
+
+
+
+### 字体
+
+<center>这是要居中的文本内容</center>
+
+---
+
+分割线：三个---或者***，回车换行
+
+---
+
+_斜体：下划线夹住_、~~横线：双波浪号~~、`内联代码：灰色背景、红色字体，快捷键：shift+ctrl+反单引号(tab键上面的键)`、[链接：中括号和圆括号](https://www.baidu.com/)、__粗体：双下划线夹住或者双星号夹住，快捷键ctrl+B__
+
+
+
+{:.text-red}
+
+红色字体、默认背景，直到换行结束，只管一段。
+
+{:.bg-yellow-dark}
+默认颜色、有背景，直到换行结束，只管一段
+
+{:.bg-yellow-dark.text-white.p-2.box-shadow-large}
+
+大边框背景色
+
+{:.bg-yellow-dark.text-white}
+有背景、有颜色，直到换行结束，只管一段
+
+{:.bg-yellow-dark.text-white.m-5}
+
+有背景、有颜色，字和背景都缩进
+
+{:.bg-yellow-dark.text-white.p-5.mb-6}
+有背景，有颜色，段落有缩进，但背景色不缩进
+
+{:.bg-yellow-dark.text-white}
+某些字符加**大**{:.h1}
+
+
+
+```tip
+这是一个tip
+```
+
+```note
+这个是note
+```
+
+### 插入数学公式
+
+分为行间公式和行内公式。
+
+- 行间公式：使用latex语法格式，使用latex工具网站编辑，再复制到markdown文件中，快捷键：shift+ctrl+m，需要在公式前后加回车换行，否则显示不正常
+  
+  
+  $$
+  \left\{\begin{array}{l}  \dot{x_{1}}=x_{2}
+  \\ \dot{x_{2}}=f(x_{1},x_{2})+bu
+  \\ y=x_{1}
+  \end{array}\right.
+$$
+  
+  
+  
+- 行内公式：使用两个＄夹住即可：$ f(x) = x $ 
+
+### 图片引用
+
+格式`![名字](图片路径)`，直接截图复制到markdown 文档即可，markdown设置为如果有图片复制进来，就在这个文件的同级目录创建`这个文件名字_img`的文件夹，图片自动放进来，但是如果在文档中把图片删除，文件夹中的图片依然在，需要手动删除
+
+网络图片也可以修改大小，右键修改如下：
+
+```
+<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3832721317,312397218&fm=26&gp=0.jpg" alt="avatar" style="zoom: 80%;" />
+```
+
+<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3832721317,312397218&fm=26&gp=0.jpg" alt="avatar" style="zoom: 80%;" />
+
+本地图片，也可以自定义图片的位置和大小
+
+```
+<div align="center"><img width="600" height="auto" src="preface_img/1.jpg"/></div>
+```
+
+
+
+<div align="center"><img width="600" height="auto" src="preface_img/1.jpg"/></div>
+
+
+
+Github仓库上的图片，加载的速度还可以，但是手机端不显示...还是使用本地方式保存吧，然后一起上传到云仓库
+
+<img width="600" height="auto" src="https://raw.githubusercontent.com/life696/images/master/img1/4.jpeg"/>
+
+
+
+
+
+
+
+### 插入代码
+
+```
+快捷键：shift+ctrl+k
+然后右下角选择语言种类
+```
+
+
+
+### 插入引用快
+
+> 这是引用块
+>
+> 快捷键：shift+ctrl+q
+
+### HTML语法
+
+使用`span`或者`font`标签，同时用`style`属性控制样式。
+
+<font face="微软雅黑" color="red" size="6">1.字体及字体颜色和大小，代码如下：</font>
+
+```
+<font face="微软雅黑" color="red" size="6">1.字体及字体颜色和大小，代码如下：</font>
+```
+
+<font color="#0000ff">2.字体颜色，代码如下：</font>
+
+```
+<font color="#0000ff">2.字体颜色</font>
+```
+
+<span style='color:red'>3.This is red</span> 
+
+```
+<span style='color:red'>3.This is red</span> 
+```
+
+4.按键标识<kbd>Ctrl</kbd>+<kbd>F9</kbd>
+
+```
+<kbd>Ctrl</kbd>+<kbd>F9</kbd>
+```
+
+<span style="font-size:2rem; background:yellow;">5.字体大小和背景</span> 
+
+```
+<span style="font-size:2rem; background:yellow;">5.字体大小和背景</span> 
+```
+
+<p align="left">6.居左文本，代码如下</p>
+
+```
+<p align="left">6.居左文本</p>
+```
+
+<p align="center">7.居中文本，代码如下</p>
+
+```
+<p align="center">7.居中文本</p>
+```
+
+<p align="right">8.居右文本，代码如下：</p>
+
+```
+<p align="right">8.居右文本</p>
+```
+
+
+
+### 行距
+
+在Typora中shift + enter是单回车（间距小），而enter是双回车（间距大）。
+
+但是在网页中只有双回车才是真的回车换行
+
+### 相关修改
+
+**1. 修改了_includes\templates\addons.liquid**
+
+删除了左边栏最下面的小窗口
+
+**1. 修改了_includes\templates\footer.liquid**
+
+修改了底部内容
+
+### 可能存在的问题
+
+**1. latex公式问题**
+
+jekll不支持latex公式，在`_include文件夹`中搜索`head`，可以找到一个`head.html`文件，记事本打开，里面没有内容，加入如下内容：
+
+```
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+```
+
+
+
+**2. 网页Github-Setting报错问题**
+
+报错信息为：
+
+GitHub Pages
+GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.
+
+ The CNAME jekyll-rtd-theme.rundocs.io is already taken. Check out https://docs.github.com/articles/troubleshooting-custom-domains#cname-errors for more information.
+
+解决：
+
+找到根目录下的CNAME文件，删除。
+
+或者有其他报错问题，遇到再修改！**要保证：**每提交一次修改，最后都要在github-setting中看是否有错误。
+
+
+
+## 要整理的内容
+
+- 傅里叶变换
+- 拉氏变换
+- Z变换
+- 级数展开
+- 什么是模块化编程？如何实现？
+- 
+
+
+
+
