@@ -262,7 +262,7 @@ GitHub Pages is designed to host your personal, organization, or project pages f
 
 安装git工具软件，该软件为`Git-2.26.2-64-bit.exe`
 
-**1. 安装软件之后，连接github账户**
+### 1. 安装软件之后，连接github账户
 
 - 鼠标右键单击，选择`Git GUI Here`
 
@@ -286,8 +286,7 @@ GitHub Pages is designed to host your personal, organization, or project pages f
   git config --global user.email "邮箱"
   ```
 
-
-**2. 克隆云端仓库到本地**
+### 2. 克隆云端仓库到本地
 
 克隆云端仓库，如果是空仓库，进入就会看到链接。如果不是空仓库，就点击`Code`，下面就会弹出链接
 
@@ -298,7 +297,7 @@ git clone git@github.com:life696/life696.github.io.git
 
 以上两条选择一个，`https`的不行，就用`SSH`的
 
-**3. 本地的修改文件后，推送到云端**
+### 3. 本地的修改文件后，推送到云端
 
 三合一直接推送到云端：`git add . && git commit -m "更新" && git push origin master`
 

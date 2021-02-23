@@ -34,11 +34,11 @@
 
 影视娱乐：|   [黑米影院](http://www.tv432.com/index.html)    | [五杀影院](https://www.yufu5.com/)    |  [新气息](http://m.qixiys.com/)     |  [80s](http://www.8080s.net/ )  |
 
-资源搜索：|  [QQ44资源](http://www.45678.org/)  |   |   
+资源搜索：|  [QQ44资源](http://www.45678.org/)  |   
 
 [操作系统学习](https://rcore-os.github.io/rCore-Tutorial-Book-v3/#)    |  [Think Python 2e](https://codingpy.com/books/thinkpython2/index.html)
 
-[标准草书](http://www.360doc.cn/mip/795643749.html)    | [少年风水师](http://www.23us.tw/0_84161/)    |  [书画篆刻库](https://life696.github.io/shuFaImg/)
+[标准草书](http://www.360doc.cn/mip/795643749.html)    | [少年风水师](http://www.23us.tw/0_84161/)    |  [书画篆刻库](https://life696.github.io/shuFaImg/Doc_Art/)
 
 ### 联系方式
 
