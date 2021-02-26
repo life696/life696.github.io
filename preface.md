@@ -6,20 +6,6 @@
 
 
 
-
-
-## 网页手册链接
-
-[正点原子资料下载中心](http://www.openedv.com/docs/index.html#)
-
-[linux 5.11 内核文档](https://www.kernel.org/doc/html/latest/index.html)
-
-[Linux内核代码风格](https://www.kernel.org/doc/html/latest/translations/zh_CN/process/coding-style.html)
-
-[蒲慕明：博士研究生如何做创新性研究](http://www.360doc.com/content/19/0407/10/7151997_826951162.shtml)
-
-[百问网资料中心](http://download.100ask.net/index.html)
-
 ## 本博客操作说明
 
 ### 本博客主题
@@ -418,7 +404,21 @@ nothing to commit, working tree clean
 
 
 
+## 链接汇总
 
+### 书画篆刻
+
+[中国历代书法名家作品全集](http://www.sfzj123.com/person/getPersons?pt=01)   |   [欧阳询楷书基本笔画正确写法](http://www.360doc.com/content/19/0225/12/18577042_817404443.shtml)  |  [宋拓《九成宫醴泉铭》高清整碑复原版](https://www.sohu.com/a/155103304_258370)     |    [李祺藏本高清](https://m.wang1314.com/doc/webapp/topic/21056376.html)    |    [宋拓-高凤翰等递藏本](http://www.360doc.com/content/18/0511/00/9598567_752869594.shtml)     |    [三井本、姚孟起临本](http://www.360doc.com/content/20/0409/18/10243616_904897413.shtml)    |    [田蕴章临九成宫](http://www.360doc.cn/mip/822353785.html)    |    [蜀素帖](https://baijiahao.baidu.com/s?id=1655508851450404227&wfr=spider&for=pc)    |    [四时读书乐](https://mp.weixin.qq.com/s?__biz=MzUxMzUzMDc4Mg==&mid=2247496859&idx=3&sn=f76df03dbb326ad8a028da36c742987c&chksm=f9517a6ace26f37c3f408e0d19501bc700e41f13ac14e29c545c6220a6bb68b9ca465ba2bed7&scene=126&sessionid=1594819948&key=3a7b1476f26f2484c6c19988200ad562ca94e6c6f3b5120a80c8bc4a3b99a505bb4ba474b3b611c09d4ec8104e152263cadcbd742338960e20702914b9c68deae1bb5b8de041b551932e2d46c8be574f&ascene=1&uin=NTk2NTIxMTc2&devicetype=Windows+7+x64&version=6209007b&lang=zh_CN&exportkey=A1IorssFKVOZhL0i7oQtfM8%3D&pass_ticket=%2FDAWp8T9EwPuNPsl7iKmM537ZmSKt%2Fu0IYABkBYhk4alihG%2FgugQdNsL4w%2FOEZL4)    |    [值得临写的篆书](http://www.360doc.com/content/19/0629/16/16556281_845600138.shtml)    |    [碑文高清大图及技法学习](http://www.360doc.com/content/19/0623/18/15521688_844371161.shtml)    |    [李斯简介及诗文](https://www.gushiwen.org/Author_aa21e3aa6f.aspx)     |    [为什么选择皇甫诞](https://www.sohu.com/a/214894794_131728)    |    [高清大字三门记](https://www.sohu.com/a/220295756_657937)     |    [前后赤壁赋笔法](https://www.sohu.com/a/190895059_469206)
+
+
+
+### 嵌入式技术
+
+[正点原子资料下载中心](http://www.openedv.com/docs/index.html#)     |    [linux 5.11 内核文档](https://www.kernel.org/doc/html/latest/index.html)    |    [Linux内核代码风格](https://www.kernel.org/doc/html/latest/translations/zh_CN/process/coding-style.html)    |    [百问网资料中心](http://download.100ask.net/index.html)    |    [操作系统学习](https://rcore-os.github.io/rCore-Tutorial-Book-v3/#)    |  [Think Python 2e](https://codingpy.com/books/thinkpython2/index.html)
+
+### 学术理论
+
+[蒲慕明：博士研究生如何做创新性研究](http://www.360doc.com/content/19/0407/10/7151997_826951162.shtml)
 
 
 
