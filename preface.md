@@ -321,6 +321,75 @@ Your branch is based on 'origin/master', but the upstream is gone.
 nothing to commit, working tree clean
 ```
 
+
+
+### **4. 清理本地.git文件夹**
+
+随着提交版本次数越多，本地`.git`文件夹就会越来越大，这个文件夹中，因为保存了大量的历史版本。例如有如下操作：
+
+- 第一次：上传了100张图片（10M）
+- 第二次：删除了100张图片，并且重新换了100张图片（11M），又新增了100张图片（12M）
+
+那么现在`.git`中有第一次和第二次的版本数据，现在有10+11+12=33M的数据，而第一次中的10M，是不需要的
+
+了（有时候可能需要，有时是真的不需要了）我们需要删除他们。
+
+```note
+为什么要删除他们呢？
+0. 必须是确保他们是不需要的文件，并且有删除的必要
+1. 占用本地太大，不方便灵活，而且不知道版本数据会不会在仓库限制的1G之内（我不知道，所以还是删了吧）
+2. 即使是删除的文件，也要确保备份（网盘、移动硬盘等等）
+```
+
+
+
+删除历史commit数据，有两种方案：
+
+- 方案一：直接删除.git文件夹，重新构建仓库，强制推送（亲测有效，但如果文件较多，会很慢）
+- 方案二：清楚本地所有commit记录，然后重新推送到云端（亲测失败，推不上去，不知道为什么，先做记录，以后再查）
+
+**方案一：重新构建仓库**
+
+大体步骤如下：
+
+- 删除本地`.git`文件夹：`rm -rf .git`
+- 重新构建本地仓库：`git init`
+- 添加所有文件：`git add .`
+- 提交：`git commit -m "reinit"`
+- 强制推送：`git push -f -u origin master`，需要注意的是，此步可能报错推不上去，解决如下：
+  - 与远端连接（姑且这叫）：`git remote add origin 项目地址`
+  - 重新推送：`git push -f -u origin master`
+
+总结一下就是：
+
+- 删除本地commit并且重构从库，重新commit：
+
+  `rm -rf .git && git init && git add . && git commit -m "reinit"`
+
+  ```
+  rm -rf .git && git init && git add . && git commit -m "reinit"
+  ```
+
+- 强制推送：
+
+  `git remote add origin 你的项目地址 && git push -f -u origin master`
+
+  ```
+  git remote add origin 你的项目地址 && git push -f -u origin master
+  ```
+
+  
+
+
+
+
+
+**方案二：清楚commit记录**
+
+
+
+
+
 ## 要整理的内容
 
 - 傅里叶变换
