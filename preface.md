@@ -346,17 +346,32 @@ nothing to commit, working tree clean
 删除历史commit数据，有两种方案：
 
 - 方案一：直接删除.git文件夹，重新构建仓库，强制推送（亲测有效，但如果文件较多，会很慢）
-- 方案二：清楚本地所有commit记录，然后重新推送到云端（亲测失败，推不上去，不知道为什么，先做记录，以后再查）
+- 方案二：清楚本地所有commit记录，然后重新推送到云端（亲测失败，云端commit记录清空，本地仍在。不知道为什么，先做记录，以后再查）
 
-**方案一：重新构建仓库**
+
+
+**方案一：重新构建仓库（有效）**
 
 大体步骤如下：
 
 - 删除本地`.git`文件夹：`rm -rf .git`
+
 - 重新构建本地仓库：`git init`
+
 - 添加所有文件：`git add .`
+
 - 提交：`git commit -m "reinit"`
+
 - 强制推送：`git push -f -u origin master`，需要注意的是，此步可能报错推不上去，解决如下：
+
+  ```note
+  报错信息：
+  fatal: 'origin' does not appear to be a git repository
+  fatal: Could not read from remote repository.
+  Please make sure you have the correct access rights and the repository exists
+   
+  ```
+
   - 与远端连接（姑且这叫）：`git remote add origin 项目地址`
   - 重新推送：`git push -f -u origin master`
 
@@ -366,25 +381,42 @@ nothing to commit, working tree clean
 
   `rm -rf .git && git init && git add . && git commit -m "reinit"`
 
-  ```
-  rm -rf .git && git init && git add . && git commit -m "reinit"
-  ```
-
 - 强制推送：
 
   `git remote add origin 你的项目地址 && git push -f -u origin master`
-
-  ```
-  git remote add origin 你的项目地址 && git push -f -u origin master
-  ```
 
   
 
 
 
+**方案二：清除commit记录**
+
+大致流程如下：
+
+- 切换分支：`git checkout --orphan latest_branch`
+- 添加到暂存区：`git add -A`
+- 提交更改： `git commit -am "to init"`
+- 删除分支： `git branch -D master`
+- 重命名分支： `git branch -m master`
+- 强制提交到远程仓库：`git push -f origin master`
 
 
-**方案二：清楚commit记录**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
