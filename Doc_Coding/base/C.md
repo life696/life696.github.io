@@ -1489,6 +1489,117 @@ unsigned int sum_int( unsigned int base )
 
 
 
+### static用法
+
+**定义局部函数**
+
+局部函数，只能在函数所处的.c文件中调用，其他文件不可以调用这个函数。不需要在.h文件中声明。
+
+`fun.h`文件：
+
+```c
+// fun.h
+#ifndef FUN_H
+#define FUN_H
+
+int add(int x, int y);
+
+#endif // FUN_H
+```
+
+`fun.c`文件：
+
+```c
+// fun.c
+
+#include "fun.h"
+#include <stdio.h>
+
+static void printInfo(void);
+
+int add(int x, int y)
+{
+   printInfo();
+   return (x + y);
+}
+
+// 这个函数只会被fun.c中其他函数调用，不可被其他文件中的函数调用
+static void printInfo(void)
+{
+    printf("you add a and b...\n");
+}
+```
+
+这里要注意的是，如果`static`函数在调用他的函数上面，就可以直接实现函数；如果在调用他的函数下面，就要先在上面声明有这个函数，才可以。
+
+`main.c`
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include "fun.h"
+
+int main()
+{
+    int a = add(1, 2);
+    printf("a = %d\n", a);
+
+    return 0;
+}
+```
+
+结果如下：
+
+```
+you add a and b...
+a = 3
+```
+
+**定义函数中的静态变量**
+
+函数中使用static定义的变量，不管函数被调用了几次，他只会初始化一次，在第n次调用这个函数时，这个变量的初值是第n-1次执行结束后的值，示例如下：
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void fun()
+{
+    static int a = 1;
+    printf("这个函数调用了 %d 次\n", a);
+
+    a++;
+}
+
+int main()
+{
+    fun();
+    fun();
+    fun();
+    fun();
+    return 0;
+}
+```
+
+执行结果如下：
+
+```
+这个函数调用了 1 次
+这个函数调用了 2 次
+这个函数调用了 3 次
+这个函数调用了 4 次
+```
+
+
+
+
+
+
+
+
+
+
+
 ## 待整理
 
 ### 指针
@@ -1499,9 +1610,13 @@ unsigned int sum_int( unsigned int base )
 
 
 
-### static用法
 
-定义局部函数
+
+### extern用法
+
+
+
+
 
 
 
