@@ -2,6 +2,6 @@
 sort: 6
 ---
 
-# 春秋榖梁传
+# 诗经楚辞
 
 {% include list.liquid all=true %}
