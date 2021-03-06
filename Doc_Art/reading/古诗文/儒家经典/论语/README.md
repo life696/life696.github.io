@@ -2,6 +2,6 @@
 sort: 6
 ---
 
-# 儒家经典
+# 论语
 
 {% include list.liquid all=true %}
