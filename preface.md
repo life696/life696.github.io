@@ -10,15 +10,13 @@
 
 ### 本博客主题
 
-你这个$A = \{x|f(x) = 0\}$是的
+你这个$A = \{x\mid f(x) = 0\}$是的
 
-你这个$A=\left\{x|f(x) = 0\right\}你这个$
+你这个$A=\left\{x\mid f(x) = 0\right\}你这个$
 
-$A = {x|f(x),x}$
+$A = \{ x\mid f(x) = 0\}$
 
-
-
-
+$A = \{  m+2, 2m^2+m \}$
 
 $A=\lbrace  m+2, 2m^2+m      \rbrace$
 
