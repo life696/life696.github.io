@@ -10,9 +10,11 @@
 
 ### 本博客主题
 
-
+1
 
 $A=\lbrace  m+2, 2m^2+m      \rbrace$
+
+$A = {x|f(x),x}$
 
 本博客使用Github提供的github page，和[jekyll主题模版](http://jekyllthemes.org/)配合使用，步骤如下：
 
