@@ -15,49 +15,62 @@
 - 行内公式：公式在一行文字之中，使用两个`$`夹住，例如`$x = 1$`
 - 行间公式：公式单独一部分，占一些行
 
-|     符号     |       latex语法        |
-| :----------: | :--------------------: |
-|  集合中的{}  | `\{ 元素1,元素2... }\` |
-|  集合中的\|  |          \mid          |
-| 集合中的属于 |          \in           |
-|              |                        |
-|              |                        |
-|              |                        |
-|              |                        |
-|              |                        |
-|              |                        |
+|                    符号                     |       latex语法        |
+| :-----------------------------------------: | :--------------------: |
+|               集合中的$\{\}$                | `\{ 元素1,元素2... }\` |
+|               集合中的$\mid$                |          \mid          |
+|              集合中的属于$\in$              |          \in           |
+|     集合中的A包含于B(子集),$A\subset B$     |       A\subset B​       |
+| 集合中的A真包含于B(真子集),$A\subsetneqq B$ |     A\subsetneqq B​     |
+|         集合中的A包含B,$A\supset B$         |       A\supset B​       |
+|      集合中的A真包含B,$A\supsetneqq B$      |     A\supsetneqq B     |
+|     集合中的A不包含于B,$A\not\subset B$     |     A\not\subset B     |
+|           集合中的A交B,$A\cap B$            |        A\cap B         |
+|           集合中的A并B,$A\cup B$            |        A\cup B         |
+|       集合中的A的闭包,$\overline{A}$        |      \overline{A}      |
+|        集合中的A减去B,$A\setminus B$        |      A\setminus B      |
+|        集合中的实数集合,$\mathbb{R}$        |       \mathbb{R}       |
+|          集合中的空集,$\emptyset$           |       \emptyset        |
+|                  集合中的                   |                        |
+|                  集合中的                   |                        |
+|                                             |                        |
+|                                             |                        |
+|                                             |                        |
 
-$A = \{x\mid f(x) = 0\}$是的
+例如：
 
+- $A = \{x\mid f(x) = 0\}$的代码如下：
 
+  ```
+  $A = \{x\mid f(x) = 0\}$
+  ```
 
-$A = \{ x\mid f(x) = 0\}$
+- $A = \{  m+2, 2m^2+m \}$的代码如下：
 
-$A = \{  m+2, 2m^2+m \}$
-
-$A=\lbrace  m+2, 2m^2+m      \rbrace$
-
-
-
-### 插入数学公式
-
-分为行间公式和行内公式。
-
-- 行间公式：使用latex语法格式，使用latex工具网站编辑，再复制到markdown文件中，快捷键：shift+ctrl+m，需要在公式前后加回车换行，否则显示不正常
-
-
-  $$
-  \left\{\begin{array}{l}  \dot{x_{1}}=x_{2}
-  \\ \dot{x_{2}}=f(x_{1},x_{2})+bu
-  \\ y=x_{1}
-  \end{array}\right.
-  $$
-
-  
-
-- 行内公式：使用两个＄夹住即可：$ f(x) = x $ 
+  ```
+  $A = \{  m+2, 2m^2+m \}$
+  ```
 
 
+
+行间公式：快捷键为`shift+ctrl+m`，需要在公式前后加回车换行，否则显示可能不正常，使用Latex在线编辑器编辑即可。
+
+
+$$
+\left\{\begin{array}{l}  \dot{x_{1}}=x_{2}
+\\ \dot{x_{2}}=f(x_{1},x_{2})+bu
+\\ y=x_{1}
+\end{array}\right.
+$$
+
+代码如下：
+
+```
+\left\{\begin{array}{l}  \dot{x_{1}}=x_{2}
+\\ \dot{x_{2}}=f(x_{1},x_{2})+bu
+\\ y=x_{1}
+\end{array}\right.
+```
 
 
 
