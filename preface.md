@@ -4,18 +4,6 @@
 
 把学习到的知识全都总结、整理到这里，方便以后查阅、复习
 
-
-
-$A=\{m+2, 2m^2+m      \}$
-
-$A=\lbrace m+2, 2m^2+m     \rbrace$
-
-$A=\lbrace x \mid f(x) = 0     \rbrace$
-
-
-
-集合$A=${$m+2, 2m^2+m$}中，
-
 ## 本博客操作说明
 
 ### Latex语法和数学公式
@@ -25,27 +13,28 @@ $A=\lbrace x \mid f(x) = 0     \rbrace$
 - 行内公式：公式在一行文字之中，使用两个`$`夹住，例如`$x = 1$`
 - 行间公式：公式单独一部分，占一些行
 
-|                    符号                     |       latex语法        |
-| :-----------------------------------------: | :--------------------: |
-|             集合中的花括号`{}`              | `\{ 元素1,元素2... }\` |
-|             集合中的竖线$\mid$              |          \mid          |
-|              集合中的属于$\in$              |          \in           |
-|     集合中的A包含于B(子集),$A\subset B$     |       A\subset B​       |
-| 集合中的A真包含于B(真子集),$A\subsetneqq B$ |     A\subsetneqq B​     |
-|         集合中的A包含B,$A\supset B$         |       A\supset B​       |
-|      集合中的A真包含B,$A\supsetneqq B$      |     A\supsetneqq B     |
-|     集合中的A不包含于B,$A\not\subset B$     |     A\not\subset B     |
-|           集合中的A交B,$A\cap B$            |        A\cap B         |
-|           集合中的A并B,$A\cup B$            |        A\cup B         |
-|       集合中的A的闭包,$\overline{A}$        |      \overline{A}      |
-|        集合中的A减去B,$A\setminus B$        |      A\setminus B      |
-|        集合中的实数集合,$\mathbb{R}$        |       \mathbb{R}       |
-|          集合中的空集,$\emptyset$           |       \emptyset        |
-|                  集合中的                   |                        |
-|                  集合中的                   |                        |
-|                                             |                        |
-|                                             |                        |
-|                                             |                        |
+|                    符号                     |          latex语法           |
+| :-----------------------------------------: | :--------------------------: |
+|             集合中的花括号`{}`              |    `\{ 元素1,元素2... }\`    |
+|             集合中的花括号`{}`              | 左括号\lbrace；右括号\rbrace |
+|             集合中的竖线$\mid$              |             \mid             |
+|              集合中的属于$\in$              |             \in              |
+|     集合中的A包含于B(子集),$A\subset B$     |          A\subset B​          |
+| 集合中的A真包含于B(真子集),$A\subsetneqq B$ |        A\subsetneqq B​        |
+|         集合中的A包含B,$A\supset B$         |          A\supset B​          |
+|      集合中的A真包含B,$A\supsetneqq B$      |        A\supsetneqq B        |
+|     集合中的A不包含于B,$A\not\subset B$     |        A\not\subset B        |
+|           集合中的A交B,$A\cap B$            |           A\cap B            |
+|           集合中的A并B,$A\cup B$            |           A\cup B            |
+|       集合中的A的闭包,$\overline{A}$        |         \overline{A}         |
+|        集合中的A减去B,$A\setminus B$        |         A\setminus B         |
+|        集合中的实数集合,$\mathbb{R}$        |          \mathbb{R}          |
+|          集合中的空集,$\emptyset$           |          \emptyset           |
+|                  集合中的                   |                              |
+|                  集合中的                   |                              |
+|                                             |                              |
+|                                             |                              |
+|                                             |                              |
 
 例如：
 
