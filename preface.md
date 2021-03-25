@@ -12,7 +12,11 @@ $A=\lbrace m+2, 2m^2+m     \rbrace$
 
 $A=\lbrace x \mid f(x) = 0     \rbrace$
 
+$A=\lbrace x \mid f(x) = 0     \rbrace$
 
+
+
+集合$A=${$m+2, 2m^2+m$}中，
 
 ## 本博客操作说明
 
@@ -25,8 +29,8 @@ $A=\lbrace x \mid f(x) = 0     \rbrace$
 
 |                    符号                     |       latex语法        |
 | :-----------------------------------------: | :--------------------: |
-|               集合中的$\{\}$                | `\{ 元素1,元素2... }\` |
-|               集合中的$\mid$                |          \mid          |
+|             集合中的花括号`{}`              | `\{ 元素1,元素2... }\` |
+|             集合中的竖线$\mid$              |          \mid          |
 |              集合中的属于$\in$              |          \in           |
 |     集合中的A包含于B(子集),$A\subset B$     |       A\subset B​       |
 | 集合中的A真包含于B(真子集),$A\subsetneqq B$ |     A\subsetneqq B​     |
