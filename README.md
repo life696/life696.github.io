@@ -10,8 +10,6 @@
 
 
 
-
-
 ## 相关链接
 
 搜索学习： |   [百度](https://baidu.com)   | [google](https://www.google.com.hk/)  |[Bing搜索](https://cn.bing.com/?rdr=1&rdrig=D8052D35315B4F8C9D9F9DEBFE862547&FORM=BEHPTB&ensearch=1)  |  [中国大学MOOC](https://www.icourse163.org/)  | [爱课程](http://www.icourses.cn/home/)  | [Bilibili](https://www.bilibili.com/)    | [网易云课堂](https://study.163.com/)    |
@@ -56,26 +54,6 @@
 
 
 
-近期学习整理
-
-### 编程语言
-
-#### C
-
-scanf():不能正常输入，被忽略的问题
-
-#### C++
-
-
-
-#### Python
-
-
-
-### 网络爬虫课程
-
-
-
 
 
 
@@ -88,23 +66,41 @@ scanf():不能正常输入，被忽略的问题
 
 
 
-### 数学知识总结
-
-高等数学、线性代数与矩阵、概率论、复变函数等等
 
 
+1.C语言
 
-### 神经网络理论
+​	scanf():不能正常输入，被忽略的问题
 
-各种算法
+2.C++
+
+3.Python
+
+​	网络爬虫
+
+4.数学知识：高数、线性代数和矩阵、概率和统计、复变函数、拉氏变换、傅里叶变换等等
+
+5.Web前端
+
+​	html、css
+
+6.控制理论
+
+​	PID、ADRC等各种算法
+
+​	各种控制理论
+
+​	各种控制对象
+
+7.人工智能
+
+​	神经网络、随机森林、K
 
 
 
 
 
-### 控制理论
 
-PID等各种控制算法，并且编写代码
 
 
 
