@@ -82,7 +82,7 @@
 
 5.Web前端
 
-​	html、css
+　　html、css
 
 6.控制理论
 
@@ -110,9 +110,11 @@
 
 11.应用开发
 
-C#、Qt
+　　C#、Qt
 
+12.学术理论仿真软件
 
+　　Matlab、Pytorch、Vrep
 
 
 
