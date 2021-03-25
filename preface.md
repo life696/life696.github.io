@@ -6,6 +6,14 @@
 
 
 
+$A=\{m+2, 2m^2+m      \}$
+
+$A=\lbrace m+2, 2m^2+m     \rbrace$
+
+$A=\lbrace x \mid f(x) = 0     \rbrace$
+
+
+
 ## 本博客操作说明
 
 ### Latex语法和数学公式
