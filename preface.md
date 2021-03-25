@@ -12,8 +12,6 @@ $A=\lbrace m+2, 2m^2+m     \rbrace$
 
 $A=\lbrace x \mid f(x) = 0     \rbrace$
 
-$A=\lbrace x \mid f(x) = 0     \rbrace$
-
 
 
 集合$A=${$m+2, 2m^2+m$}中，
