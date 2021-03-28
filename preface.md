@@ -32,8 +32,9 @@
 |          集合中的空集,$\emptyset$           |          \emptyset           |
 |                  集合中的                   |                              |
 |                  集合中的                   |                              |
-|                                             |                              |
-|                                             |                              |
+|                   绝对值                    |        \vert x \vert         |
+|                    角AOB                    |          \ang{AOB}           |
+|                  角度表示                   |           0^\circ            |
 |                                             |                              |
 
 例如：
