@@ -31,9 +31,9 @@
 |        集合中的实数集合,$\mathbb{R}$        |          \mathbb{R}          |
 |          集合中的空集,$\emptyset$           |          \emptyset           |
 |                  集合中的                   |                              |
-|                  集合中的                   |                              |
+|                 三角形符号                  |          \Delta ABC          |
 |                   绝对值                    |        \vert x \vert         |
-|                    角AOB                    |          \ang{AOB}           |
+|                    角AOB                    |          \angle AOB          |
 |                  角度表示                   |           0^\circ            |
 |                                             |                              |
 
