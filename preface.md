@@ -23,6 +23,8 @@
 - 行内公式：公式在一行文字之中，使用两个`$`夹住，例如`$x = 1$`
 - 行间公式：公式单独一部分，占一些行
 
+
+
 |                    符号                     |          latex语法           |
 | :-----------------------------------------: | :--------------------------: |
 |             集合中的花括号`{}`              |    `\{ 元素1,元素2... }\`    |
@@ -41,11 +43,18 @@
 |        集合中的实数集合,$\mathbb{R}$        |          \mathbb{R}          |
 |          集合中的空集,$\emptyset$           |          \emptyset           |
 |                  集合中的                   |                              |
-|                 三角形符号                  |          \Delta ABC          |
-|                   绝对值                    |        \vert x \vert         |
-|                    角AOB                    |          \angle AOB          |
-|                  角度表示                   |           0^\circ            |
+|           三角形符号$\Delta ABC$            |          \Delta ABC          |
+|            绝对值$\vert x \vert$            |        \vert x \vert         |
+|              角AOB$\angle AOB$              |          \angle AOB          |
+|              角度表示$0^\circ$              |           0^\circ            |
+|          单向推导箭头$\Rightarrow$          |         \Rightarrow          |
+|     双向互推箭头$$\Longleftrightarrow$$     |    $\Longleftrightarrow$     |
+|        双向互推箭头$\Leftrightarrow$        |       \Leftrightarrow        |
+|               垂直符号$\bot$                |             \bot             |
 |                                             |                              |
+|                                             |                              |
+
+
 
 例如：
 
