@@ -25,32 +25,32 @@
 
 
 
-|                    符号                     |          latex语法           |
-| :-----------------------------------------: | :--------------------------: |
-|             集合中的花括号`{}`              |    `\{ 元素1,元素2... }\`    |
-|             集合中的花括号`{}`              | 左括号\lbrace；右括号\rbrace |
-|             集合中的竖线$\mid$              |             \mid             |
-|              集合中的属于$\in$              |             \in              |
-|     集合中的A包含于B(子集),$A\subset B$     |          A\subset B​          |
-| 集合中的A真包含于B(真子集),$A\subsetneqq B$ |        A\subsetneqq B​        |
-|         集合中的A包含B,$A\supset B$         |          A\supset B​          |
-|      集合中的A真包含B,$A\supsetneqq B$      |        A\supsetneqq B        |
-|     集合中的A不包含于B,$A\not\subset B$     |        A\not\subset B        |
-|           集合中的A交B,$A\cap B$            |           A\cap B            |
-|           集合中的A并B,$A\cup B$            |           A\cup B            |
-|       集合中的A的闭包,$\overline{A}$        |         \overline{A}         |
-|        集合中的A减去B,$A\setminus B$        |         A\setminus B         |
-|        集合中的实数集合,$\mathbb{R}$        |          \mathbb{R}          |
-|          集合中的空集,$\emptyset$           |          \emptyset           |
-|                  集合中的                   |                              |
-|           三角形符号$\Delta ABC$            |          \Delta ABC          |
-|            绝对值$\vert x \vert$            |        \vert x \vert         |
-|              角AOB$\angle AOB$              |          \angle AOB          |
-|              角度表示$0^\circ$              |           0^\circ            |
-|          单向推导箭头$\Rightarrow$          |         \Rightarrow          |
-|     双向互推箭头$$\Longleftrightarrow$$     |    $\Longleftrightarrow$     |
-|        双向互推箭头$\Leftrightarrow$        |       \Leftrightarrow        |
-|               垂直符号$\bot$                |             \bot             |
+| 符号                                        | latex语法                    |
+| :------------------------------------------ | :--------------------------- |
+| 集合中的花括号`{}`                          | `\{ 元素1,元素2... }\`       |
+| 集合中的花括号`{}`                          | 左括号\lbrace；右括号\rbrace |
+| 集合中的竖线$\mid$                          | \mid                         |
+| 集合中的属于$\in$                           | \in                          |
+| 集合中的A包含于B(子集),$A\subset B$         | A\subset B​                   |
+| 集合中的A真包含于B(真子集),$A\subsetneqq B$ | A\subsetneqq B​               |
+| 集合中的A包含B,$A\supset B$                 | A\supset B​                   |
+| 集合中的A真包含B,$A\supsetneqq B$           | A\supsetneqq B               |
+| 集合中的A不包含于B,$A\not\subset B$         | A\not\subset B               |
+| 集合中的A交B,$A\cap B$                      | A\cap B                      |
+| 集合中的A并B,$A\cup B$                      | A\cup B                      |
+| 集合中的A的闭包,$\overline{A}$              | \overline{A}                 |
+| 集合中的A减去B,$A\setminus B$               | A\setminus B                 |
+| 集合中的实数集合$\mathbb{R}$                | \mathbb{R}                   |
+| 集合中的空集$\emptyset$                     | \emptyset                    |
+|                                             |                              |
+| 三角形符号$\Delta ABC$                      | \Delta ABC                   |
+| 绝对值$\vert x \vert$                       | \vert x \vert                |
+| 角AOB$\angle AOB$                           | \angle AOB                   |
+| 角度表示$0^\circ$                           | 0^\circ                      |
+| 单向推导箭头$\Rightarrow$                   | \Rightarrow                  |
+| 双向互推箭头$$\Longleftrightarrow$$         | \Longleftrightarrow​          |
+| 双向互推箭头$\Leftrightarrow$               | \Leftrightarrow              |
+| 垂直符号$\bot$                              | \bot                         |
 |                                             |                              |
 |                                             |                              |
 
