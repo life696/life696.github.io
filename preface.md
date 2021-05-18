@@ -33,7 +33,7 @@
 | 集合中的属于$\in$                           | \in                          |
 | 集合中的A包含于B(子集),$A\subset B$         | A\subset B​                   |
 | 集合中的A真包含于B(真子集),$A\subsetneqq B$ | A\subsetneqq B​               |
-| 集合中的A包含B,$A\supset B$                 | A\supset B​                   |
+| 集合中的A包含B,$A\supseteq B$               | A\supseteq B​                 |
 | 集合中的A真包含B,$A\supsetneqq B$           | A\supsetneqq B               |
 | 集合中的A不包含于B,$A\not\subset B$         | A\not\subset B               |
 | 集合中的A交B,$A\cap B$                      | A\cap B                      |
