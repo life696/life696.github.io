@@ -8,7 +8,7 @@
 
 <p align="center" > 纸上得来终觉浅，绝知此事要躬行。 </p>
 
-
+[博导主页](https://users.encs.concordia.ca/~ymzhang/publications.html)
 
 ## 相关链接
 
@@ -20,7 +20,7 @@
 
 技术论坛：|  [PCB联盟网](https://www.pcbbar.com/)  |    [嵌入式论坛](http://www.armbbs.cn/)  | [百问网](https://www.100ask.net/index)   |  [正点原子论坛](http://www.openedv.com/)   |  [正点原子资料下载](http://www.openedv.com/docs/index.html) | 
 
-诗词书画： |  [古诗文网](https://www.gushiwen.cn/)   |   [书法字典](http://www.shufazidian.com/)    |  [古诗文网](http://www.gushice.com/)    |  [文言文之家](http://www.wywzj.cn/)  |    [书法字典公众号站内搜索](https://data.newrank.cn/m/s.html?s=OzEpPiw+PjxH)
+诗词书画： |  [古诗文网](https://www.gushiwen.cn/)   |   [书法字典](http://www.shufazidian.com/)    |  [古诗文网](http://www.gushice.com/)    |  [文言文之家](http://www.wywzj.cn/)  |    [书法字典公众号站内搜索](https://data.newrank.cn/m/s.html?s=OzEpPiw+PjxH) | [标准草书](http://www.360doc.cn/mip/795643749.html)     |  [书画篆刻库](https://life696.github.io/shuFaImg/Doc_Art/)
 
 技术手册：|   [pytorch.org](https://pytorch.org/get-started/locally/)  |   [matplotlib](https://matplotlib.org/gallery/index.html)     |[Pytorch](https://pytorch-cn.readthedocs.io/zh/latest/)     |
 
@@ -34,13 +34,15 @@
 
 资源搜索：|  [QQ44资源](http://www.45678.org/)  |   
 
-[操作系统学习](https://rcore-os.github.io/rCore-Tutorial-Book-v3/#)    |  [Think Python 2e](https://codingpy.com/books/thinkpython2/index.html)
-
-[标准草书](http://www.360doc.cn/mip/795643749.html)    | [少年风水师](http://www.23us.tw/0_84161/)    |  [书画篆刻库](https://life696.github.io/shuFaImg/Doc_Art/)
+相关书籍学习： |[操作系统学习](https://rcore-os.github.io/rCore-Tutorial-Book-v3/#)    |  [Think Python 2e](https://codingpy.com/books/thinkpython2/index.html)
 
 
 
-[近期学习](https://users.encs.concordia.ca/~ymzhang/publications.html)
+ | [少年风水师](http://www.23us.tw/0_84161/)  
+
+
+
+
 
 ### 联系方式
 
