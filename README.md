@@ -8,7 +8,7 @@
 
 <p align="center" > 纸上得来终觉浅，绝知此事要躬行。 </p>
 
-[博导主页](https://users.encs.concordia.ca/~ymzhang/publications.html)
+[博导主页](https://users.encs.concordia.ca/~ymzhang/publications.html)  | [xaut](http://yjsy.xaut.edu.cn/index.htm)
 
 ## 相关链接
 
