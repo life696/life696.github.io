@@ -159,11 +159,135 @@ PID数学表达式为：$u(t) = K_{p}[e(t) + \frac{1}{T_{i}}\int_{0}^{t}e(t)dt+T
 
 ## ADRC
 
+不依赖数学模型、克服PID的缺点、
 
+PID的缺点：1.误差的取值；2.PID的线性组合；3.误差微分信号提取
 
+安排过渡过程TD，最速跟踪微分器的离散形式：
 
+![img](controlMethod_img/clip_image002-1623770629061.png)
+
+其中，![img](controlMethod_img/clip_image004-1623770629061.png)是期望输入信号，![img](controlMethod_img/clip_image006-1623770629061.png)为步长，![img](controlMethod_img/clip_image008-1623770629061.png)是独立于![img](controlMethod_img/clip_image002-1623770757456.png)的参数，且适当的大于步长
+
+![img](controlMethod_img/clip_image010-1623770629062.png)
+
+![img](controlMethod_img/clip_image012-1623770629062.png)
+
+非线性误差反馈控制率NLSEF：
+
+![img](controlMethod_img/clip_image014-1623770629062.png)
+
+状态扩张观测器ESO
+
+![img](controlMethod_img/clip_image016-1623770629062.png)
+
+![img](controlMethod_img/clip_image018-1623770629062.png)
+
+参数整定
+
+TD参数：快速因子r，滤波因子h0。r越大，跟踪速度越快，但噪声放大越厉害；h0越大，滤波效果越好，但跟踪信号的相位损失越大。r和h0协调调整
+
+ESO参数：![img](controlMethod_img/clip_image020-1623770629062.png)六个。![img](controlMethod_img/clip_image022-1623770629062.png)一般取0.5，![img](controlMethod_img/clip_image024-1623770629062.png)取0.25；![img](controlMethod_img/clip_image026-1623770629062.png)是状态误差反馈![img](controlMethod_img/clip_image028-1623770629062.png)增益，实际系统取0.01，主要影响ESO收敛速度，参数越大对扰动估计的滞后越小，收敛速度越快。但如果取值过大，会出现观测器的震荡现象，对噪声的移植的作用也相对减弱。当知控制周期h确定时，取![img](controlMethod_img/clip_image030-1623770629062.png)，![img](controlMethod_img/clip_image032-1623770629062.png)，，![img](controlMethod_img/clip_image002-1623770796434.png)则ESO可以很好的估计![img](controlMethod_img/clip_image004-1623770796435.png)范围扰动。
+
+由于扩张状态观测器对扰动的估计和补偿作用，在扰动幅值不大、变化不是很剧烈的情况下，完全可以实现精确补偿。所以可在假设扰动为零的情况下，对控制器的![img](controlMethod_img/clip_image038-1623770629063.png)和![img](controlMethod_img/clip_image040-1623770629063.png)进行初始值设定，整定原则如下
+
+：![img](controlMethod_img/clip_image002-1623770829760.png)是k还是![img](controlMethod_img/clip_image004-1623770829760.png)
+
+![image-20210615232806602](controlMethod_img/image-20210615232806602.png)
 
 ## Backstepping
+
+使用Backstepping方法必须满足一个前提条件：系统的状态方程能够表达为严格的反馈形式，所以Backstepping方法也是基于被控对象数学模型的方法。Backstepping方法的原理基于Lyapunov稳定性原理，由前往后逐步设计控制器，又叫反步法。
+
+严格反馈的微分方程表示如下：
+
+![image-20210615232150114](controlMethod_img/image-20210615232150114.png)
+
+其中，![img](controlMethod_img/clip_image002.png)为系统的状态变量，![img](controlMethod_img/clip_image004.png)为系统的控制输入，fi 、gi 为光滑的非线性函数，其中 gi不等于0。
+
+在证明Backstepping方法的稳定性时，首先利用虚拟控制，定义由n个误差变量组成的误差系统：
+
+![image-20210615232300081](controlMethod_img/image-20210615232300081.png)
+
+其中，![img](controlMethod_img/clip_image002-1623770588312.png)是每一步的虚拟控制量，在每一步构造一个Lyapunov函数，使得每一个状态分量具有适当的渐进性。
+
+第一步，对于一阶系统![img](controlMethod_img/clip_image004-1623770588313.png)，定义Lyapunov函数：
+
+![img](controlMethod_img/clip_image002-1623770597527.png)
+
+对Lyapunov函数进行求导：
+
+![img](controlMethod_img/clip_image002-1623770608374.png)
+
+根剧Lyapunov判别法，取![img](controlMethod_img/clip_image004-1623770608374.png)，且![img](controlMethod_img/clip_image006.png)，即可有![img](controlMethod_img/clip_image008.png)，则系统稳定。
+
+   第二步，对于二阶系统：
+
+![img](controlMethod_img/clip_image010.png)
+
+定义二阶系统的Lyapunov函数：
+
+![img](controlMethod_img/clip_image012.png)
+
+对二阶系统的Lyapunov函数求导有：
+
+![img](controlMethod_img/clip_image014.png)
+
+而：
+
+![img](controlMethod_img/clip_image016.png)
+
+所以最终：
+
+![img](controlMethod_img/clip_image018.png)
+
+所以，取虚拟控制量![img](controlMethod_img/clip_image020.png)，且![img](controlMethod_img/clip_image022.png)，即有：
+
+![img](controlMethod_img/clip_image024.png)
+
+从而使二阶系统稳定。
+
+同理对于n阶系统，可以取虚拟控制量![img](controlMethod_img/clip_image026.png)，![img](controlMethod_img/clip_image028.png)，![img](controlMethod_img/clip_image030.png)，![img](controlMethod_img/clip_image032.png)即最终控制量u：
+
+![img](controlMethod_img/clip_image034.png)
+
+n阶系统的话Lyapunov函数及其导数如下：
+
+![img](controlMethod_img/clip_image036.png)
+
+![img](controlMethod_img/clip_image038.png)
+
+所以整个系统是稳定的。
+
+注意：写代码时，只需要往里套就行了。反步法的参数个数和系统的阶数相等，如果是，但是也收控制量的数目影响。
+
+   假设有一个二阶系统：
+
+![img](controlMethod_img/clip_image040.png)
+
+控制一个量，别管![img](controlMethod_img/clip_image042.png)是形式如何，只写出控制量u如下：
+
+![img](controlMethod_img/clip_image044.png)
+
+![img](controlMethod_img/clip_image004-1623770608374.png)
+
+![img](controlMethod_img/clip_image047.png)
+
+![img](controlMethod_img/clip_image049.png)
+
+其中![img](controlMethod_img/clip_image051.png)为控制量的期望的导数，如果是恒值控制系统，此项为0；![img](controlMethod_img/clip_image053.png)为参数，均大于零：
+
+![img](controlMethod_img/clip_image044.png)
+
+![img](controlMethod_img/clip_image056.png)
+
+![img](controlMethod_img/clip_image047.png)
+
+![img](controlMethod_img/clip_image049.png)
+
+ 
+
+
 
 
 
