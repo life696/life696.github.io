@@ -24,7 +24,7 @@
 
 技术手册：|   [pytorch.org](https://pytorch.org/get-started/locally/)  |   [matplotlib](https://matplotlib.org/gallery/index.html)     |[Pytorch](https://pytorch-cn.readthedocs.io/zh/latest/)     |
 
-学术：|  [知网](https://www.cnki.net/)   |    [文献鸟](https://www.storkapp.me/)   | [科研者之家](https://www.home-for-researchers.com/static/index.html#/?tdsourcetag=s_pctim_aiomsg)   |  [letpub](https://www.letpub.com.cn/)    |    [sciencedirect](https://www.sciencedirect.com/)    |     [IEEE](https://ieeexplore.ieee.org/Xplore/home.jsp]) |  [overleaf](https://www.overleaf.com/p)  |  [latex在线1](https://www.codecogs.com/latex/eqneditor.php)     |  [latex在线2](https://latex.91maths.com/)     | 
+学术：|  [知网](https://www.cnki.net/)   |    [文献鸟](https://www.storkapp.me/)    | [谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)   | [科研者之家](https://www.home-for-researchers.com/static/index.html#/?tdsourcetag=s_pctim_aiomsg)   |  [letpub](https://www.letpub.com.cn/)    |    [sciencedirect](https://www.sciencedirect.com/)    |     [IEEE](https://ieeexplore.ieee.org/Xplore/home.jsp]) |  [overleaf](https://www.overleaf.com/p)  |  [latex在线1](https://www.codecogs.com/latex/eqneditor.php)     |  [latex在线2](https://latex.91maths.com/)     | 
 
 工具网站：|  [文献鸟](https://www.storkapp.me/)  | [无人机飞行评测网站](https://www.flyeval.com/)    |   [Read the Docs](https://readthedocs.org/dashboard/)    |  [Pytorch](https://pytorch.org/) 
 

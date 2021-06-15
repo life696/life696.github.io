@@ -56,6 +56,116 @@
 
 
 
+#### 公式对齐
+
+下面是不带左花括号形式
+
+```
+\begin{aligned}
+&y=kx+b+222\\
+&y=kx^2+b\\
+\end{aligned}
+```
+
+$$
+\begin{aligned}
+&y=kx+b+222\\
+&y=kx^2+b\\
+\end{aligned}
+$$
+
+```
+\begin{aligned}
+y=kx+&b+222\\
+y=kx^2+&b\\
+\end{aligned}
+```
+
+$$
+\begin{aligned}
+y=kx+&b+222\\
+y=kx^2+&b\\
+\end{aligned}
+$$
+
+&标记的被对齐
+
+### 
+
+下面是带左花括号形式
+
+```
+\left\{
+    \begin{array}{l}
+            \dot{x_1} = x_2 \\ 
+            \dot{x_2} = f(x_1,x_2) + bu \\
+            y = x_1
+        \end{array}
+\right.          \tag{1}
+```
+
+$$
+\left\{
+    \begin{array}{l}
+            \dot{x_1} = x_2 \\ 
+            \dot{x_2} = f(x_1,x_2) + bu \\
+            y = x_1
+        \end{array}
+\right.          \tag{1}
+$$
+
+
+
+#### 公式编号
+
+```
+\left\{\begin{matrix}
+& \dot{x_1} = x_2 \\ 
+& \dot{x_2} = f(x_1,x_2) + bu 
+\end{matrix}\right.   \tag{1}
+```
+
+$$
+\left\{\begin{matrix}
+& \dot{x_1} = x_2 \\ 
+& \dot{x_2} = f(x_1,x_2) + bu 
+\end{matrix}\right.   \tag{1}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 例如：
 
 - $A = \lbrace x\mid f(x) = 0\rbrace$的代码如下：
