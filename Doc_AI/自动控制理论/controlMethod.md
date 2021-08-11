@@ -1,3 +1,13 @@
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 # 控制算法
 
 [TOC]
@@ -261,7 +271,9 @@ n阶系统的话Lyapunov函数及其导数如下：
 
 注意：写代码时，只需要往里套就行了。反步法的参数个数和系统的阶数相等，如果是，但是也收控制量的数目影响。
 
-   假设有一个二阶系统：
+
+
+假设有一个二阶系统：
 
 ![img](controlMethod_img/clip_image040.png)
 
@@ -285,7 +297,11 @@ n阶系统的话Lyapunov函数及其导数如下：
 
 ![img](controlMethod_img/clip_image049.png)
 
- 
+ 仿真代码：
+
+```python
+#
+```
 
 
 

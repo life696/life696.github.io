@@ -91,6 +91,28 @@ if __name__ == "__main__":
 
 
 
+## PyQt
+
+在anaconda中安装PyQt的库，可以用Qt的designer来设计界面，然后使用pyuic5.exe(.bat)来把ui文件转成对应的py文件（安装完PyQt库后，就有pyuic），转换步骤如下
+
+> 1.打开cmd窗口（shift+右键）
+>
+> 2.输入：pyuic5.bat xx.ui -o xx.py
+
+需要注意的是，如果提示找不到pyuic5命令，那么可以添加环境变量，或者可以把这个ui文件复制到pyuic5所在目录，然后在这个目录中，执行上述步骤。使用listary查找pyuic5所在路径，目前我的机器是：
+
+> F:\ProgramData\Anaconda3\Library\bin\pyuic5.bat
+>
+> F:\ProgramData\Anaconda3\pkgs\pyqt-5.9.2-py37h6538335_2\Library\bin\pyuic5.bat
+
+我用的是上面第一个目录
+
+或者使用pycharm的外部工具，但是需要配置，出错的话不好查。前后配置果两次，第一次成功，第二次失败，不想搞得那么复杂，不打算用pytcharm了，还是anaconda香啊。
+
+
+
+
+
 
 
 
