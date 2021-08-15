@@ -435,6 +435,8 @@ $$
 
 
 假设系统状态方程如下：
+
+
 $$
 \left\{
     \begin{array}{l}
@@ -444,19 +446,25 @@ $$
         \end{array}
 \right.    \tag{8}
 $$
+
+
 其中，如果$a, b$均已知，可以直接设计控制器，进行控制。但是如果$f(x_1,x_2)=-ax_1-b_2$中的 $a$ 是未知的，就不能直接设计控制器，可以对未知参数$a$进行估计。
 
 对 $a$ 进行估计，估计值为 $\hat{a}$ ，估计误差为$\tilde{a}$，即$\tilde{a} = a - \hat{a}$，假设未知参数$a$是恒值，或变化率很慢，接近为零，所以估计值误差的变化率如下：
 $$
 \dot{\tilde{a}} =\dot a -\dot{\hat{a}}  = -\dot{\hat{a}}   \tag{9}
 $$
+
+
 为了方便表示，这里估计误差表示为$e_3 = \tilde{a}$
 
 定义 Lyapunov 函数$V_3(e_1,e_2,e_3) = \frac{1}{2}e_1^2 +  \frac{1}{2}e_2^2+\frac{1}{2}e_3^2 >0$，对其求导有：
+
+
 $$
 \begin{align}
 
-\dot V_2(e_1,e_2,e-3) =& e_1 \dot e_1 + e_2 \dot e_2+ e_3 \dot e_3 \\
+\dot V_2(e_1,e_2,e_3) =& e_1 \dot e_1 + e_2 \dot e_2+ e_3 \dot e_3 \\
   =& e_1(-k_1e_1 + e_2) + e_2 \dot e_2 -\dot{\hat{a}} e_3   \\
   =& -k_1 e_1^2 + e_2(e_1+\dot e_2) -\dot{\hat{a}} e_3  \\
   =& -k_1 e_1^2 +e_2(e_1 + \dot v_1(x_1)- \dot x_2) -\dot{\hat{a}} e_3 \\
@@ -468,17 +476,35 @@ $$
   =& -k_1 e_1^2 +e_2(e_1 + \dot v_1(x_1)+\hat{a} x_1 + bx_2 - u)+e_3 (e_2-\dot{\hat{a}}) \\
 \end{align}  \tag{10}
 $$
-$a$ 的估计值$\hat{a}$的自适应率为$\dot{\hat{a}} = e_2$，取控制率有
+
+
+$a$ 的估计值$\hat{a}$的自适应率如下：
 $$
-u =\dot v_1(x_1) + e_1 +k_2e_2-f  				  \tag{7}
+\begin{align}
+	\dot{\hat{a}} =& e_2\\
+		          =& v_1(x_1)-x_2  \\ 
+		          =& \dot x_{1d}+k_1e_1-x_2  \\ 
+		          =& \dot x_{1d}-\dot x_1+k_1e_1  \\ 
+		          =& \dot e_1+k_1e_1   \\ 
+\end{align}  \tag{10}
 $$
 
 
+为了使$\dot V_2(e_1,e_2,e_3) <0$取控制率$u$如下：
 
 
+$$
+u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{11}
+$$
 
 
-
+如下
+$$
+\begin{equation}\label{1.1}
+   \dot{\mathbf{x}}^{n}=\mathbf{F}\left ( \mathbf{x} \right )+ \mathbf{b}\mathbf{u} +\mathbf{d}
+\end{equation}
+$$
+其中
 
 ### 参数已知仿真
 
@@ -655,6 +681,14 @@ plt.show()
 前期控制量$u$很大...
 
 ### 参数估计仿真
+
+由上面的推导有 $a$ 的估计值 $\hat{a}$ 的自适应率为 $\dot{\hat{a}} = e_2=$，控制率 $u$如下：
+$$
+u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{12} 
+$$
+
+
+
 
 
 
