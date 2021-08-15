@@ -277,7 +277,7 @@ n阶系统的话Lyapunov函数及其导数如下：
 
 ![img](controlMethod_img/clip_image040.png)
 
-控制一个量，不用管![img](controlMethod_img/clip_image042.png)是形式如何，只写出控制量u如下：
+控制一个量，别管![img](controlMethod_img/clip_image042.png)是形式如何，只写出控制量u如下：
 
 ![img](controlMethod_img/clip_image044.png)
 
@@ -302,47 +302,6 @@ n阶系统的话Lyapunov函数及其导数如下：
 ```python
 #
 ```
-
-
-
-## 自适应Backstepping
-
-​	对于模型已知系统，可以使用Backstepping控制。因为Backstepping设计控制器时，需要被控对象的数学模型，所以，当被控对象有未知参数等，导致不能确定精确的数学模型时，就不能用时候Backstepping了。
-
-​	这里假设对象中有一个未知参数，正常使用Backstepping设计控制器，然后去估计这个参数，从而进行控制。
-
-假设有如下系统：
-$$
-\left\{
-    \begin{array}{l}
-            \dot{x_1} = x_2 \\ 
-            \dot{x_2} = f(x_1,x_2) + bu \\
-            y = x_1
-        \end{array}
-\right.          \tag{1}
-$$
-其中，$f$为非线性函数，其中有一个未知参数，$b$为控制增益，$u$为控制率（对象的输入）。
-
-设有如下误差变量：
-$$
-\left\{
-    \begin{array}{l}
-            e_1 = x_{1d}-x_1 \\ 
-            e_2 = v_1(x_1) -x_2
-        \end{array}
-\right.          \tag{1}
-$$
-其中，$x_1$为系统的输出，$x_{1d}$ 为$x_1$的期望，即跟踪目标，$v_1(x_1)$为虚拟控制量，即$x_2$的期望。（想要）
-
-对于
-
-
-
-
-
-
-
-
 
 
 
