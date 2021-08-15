@@ -342,6 +342,8 @@ $$
         \end{array}
 \right.       \tag{1}
 $$
+
+
 其中，$f$为非线性函数，其中有一个未知参数，$b$为控制增益，$u$为控制率（对象的输入），这里先当作1。
 
 设有如下误差变量：
@@ -446,7 +448,7 @@ $$
 
 对 $a$ 进行估计，估计值为 $\hat{a}$ ，估计误差为$\tilde{a}$，即$\tilde{a} = a - \hat{a}$，假设未知参数$a$是恒值，或变化率很慢，接近为零，所以估计值误差的变化率如下：
 $$
-\dot{\tilde{a}} =\dot a -\dot{\hat{a}}  = -\dot{\hat{a}}
+\dot{\tilde{a}} =\dot a -\dot{\hat{a}}  = -\dot{\hat{a}}   \tag{9}
 $$
 为了方便表示，这里估计误差表示为$e_3 = \tilde{a}$
 
@@ -464,12 +466,12 @@ $$
   =& -k_1 e_1^2 +e_2(e_1 + \dot v_1(x_1)+\hat{a} x_1 + bx_2 - u)-\dot{\hat{a}} e_3  + e_2 \tilde{a}  \\
   =& -k_1 e_1^2 +e_2(e_1 + \dot v_1(x_1)+\hat{a} x_1 + bx_2 - u)-\dot{\hat{a}} e_3  + e_2 e_3  \\
   =& -k_1 e_1^2 +e_2(e_1 + \dot v_1(x_1)+\hat{a} x_1 + bx_2 - u)+e_3 (e_2-\dot{\hat{a}}) \\
-\end{align}  \tag{6}
+\end{align}  \tag{10}
 $$
-
-
-
-
+$a$ 的估计值$\hat{a}$的自适应率为$\dot{\hat{a}} = e_2$，取控制率有
+$$
+u =\dot v_1(x_1) + e_1 +k_2e_2-f  				  \tag{7}
+$$
 
 
 
