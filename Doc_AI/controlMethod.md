@@ -488,15 +488,15 @@ $$
 		          =& \dot x_{1d}+k_1e_1-x_2  \\ 
 		          =& \dot x_{1d}-\dot x_1+k_1e_1  \\ 
 		          =& \dot e_1+k_1e_1   \\ 
-\end{align}  \tag{10}
+\end{align}  \tag{11}
 $$
 
 
-为了使$\dot V_2(e_1,e_2,e_3) <0$取控制率$u$如下：
+为了使 $\dot V_2(e_1,e_2,e_3) <0$取控制率$u$如下：
 
 
 $$
-u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{11}
+u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{12}
 $$
 
 
@@ -678,10 +678,16 @@ plt.show()
 
 ### 参数估计仿真
 
-由上面的推导有 $a$ 的估计值 $\hat{a}$ 的自适应率为 $\dot{\hat{a}} = e_2=$，控制率 $u$如下：
+由上面的推导有 $a$ 的估计值 $\hat{a}$ 的自适应率为 $\dot{\hat{a}} = e_2=\dot e_1+k_1e_1$， $\hat{a} = \dot{\hat{a}} \lambda=(\dot e_1+k_1e_1) \lambda $ 
+
+控制率 $u$如下：
+
+
 $$
-u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{12} 
+u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{12}
 $$
+
+
 
 
 
