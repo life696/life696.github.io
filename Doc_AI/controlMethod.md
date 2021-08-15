@@ -6,7 +6,18 @@
         }
     });
 </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+
+
+```
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+```
+
+
 
 # 控制算法
 
@@ -424,8 +435,6 @@ $$
 
 
 假设系统状态方程如下：
-
-
 $$
 \left\{
     \begin{array}{l}
@@ -433,10 +442,8 @@ $$
             \dot{x_2} = -ax_1 -bx_2 + u \\
             y = x_1
         \end{array}
-\right.    \tag{1}
+\right.    \tag{8}
 $$
-
-
 其中，如果$a, b$均已知，可以直接设计控制器，进行控制。但是如果$f(x_1,x_2)=-ax_1-b_2$中的 $a$ 是未知的，就不能直接设计控制器，可以对未知参数$a$进行估计。
 
 对 $a$ 进行估计，估计值为 $\hat{a}$ ，估计误差为$\tilde{a}$，即$\tilde{a} = a - \hat{a}$，假设未知参数$a$是恒值，或变化率很慢，接近为零，所以估计值误差的变化率如下：
