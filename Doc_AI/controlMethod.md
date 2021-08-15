@@ -498,13 +498,7 @@ u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{11}
 $$
 
 
-如下
-$$
-\begin{equation}\label{1.1}
-   \dot{\mathbf{x}}^{n}=\mathbf{F}\left ( \mathbf{x} \right )+ \mathbf{b}\mathbf{u} +\mathbf{d}
-\end{equation}
-$$
-其中
+ 
 
 ### 参数已知仿真
 
