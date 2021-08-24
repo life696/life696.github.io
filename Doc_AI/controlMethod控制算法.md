@@ -236,9 +236,7 @@ ESO参数：![img](controlMethod_img/clip_image020-1623770629062.png)六个。![
 
 ![img](controlMethod_img/clip_image002-1623770597527.png)
 
-对Lyapunov函数进行求导：
-
-![img](controlMethod_img/clip_image002-1623770608374.png)
+对Lyapunov函数进行求导：![img](controlMethod_img/clip_image002-1623770608374.png)
 
 根剧Lyapunov判别法，取![img](controlMethod_img/clip_image004-1623770608374.png)，且![img](controlMethod_img/clip_image006.png)，即可有![img](controlMethod_img/clip_image008.png)，则系统稳定。
 
@@ -246,21 +244,13 @@ ESO参数：![img](controlMethod_img/clip_image020-1623770629062.png)六个。![
 
 ![img](controlMethod_img/clip_image010.png)
 
-定义二阶系统的Lyapunov函数：
+定义二阶系统的Lyapunov函数：![img](controlMethod_img/clip_image012.png)
 
-![img](controlMethod_img/clip_image012.png)
+对二阶系统的Lyapunov函数求导有：![img](controlMethod_img/clip_image014.png)
 
-对二阶系统的Lyapunov函数求导有：
+而：![img](controlMethod_img/clip_image016.png)
 
-![img](controlMethod_img/clip_image014.png)
-
-而：
-
-![img](controlMethod_img/clip_image016.png)
-
-所以最终：
-
-![img](controlMethod_img/clip_image018.png)
+所以最终：![img](controlMethod_img/clip_image018.png)
 
 所以，取虚拟控制量![img](controlMethod_img/clip_image020.png)，且![img](controlMethod_img/clip_image022.png)，即有：
 
@@ -418,7 +408,7 @@ u =\dot v_1(x_1) + e_1 +k_2e_2-f  				  \tag{7}
 $$
 
 
-其中取法为：$e_1 + \dot v_1(x_1)- f(x_1,x_2) - u = -k_2e_2^2$，解出 $u$ 即可。
+其中取法为：$e_1 + \dot v_1(x_1)- f(x_1,x_2) - u = -k_2e_2$，解出 $u$ 即可。
 
 设计思路流程总结如下：
 
@@ -450,7 +440,7 @@ $$
 
 其中，如果$a, b$均已知，可以直接设计控制器，进行控制。但是如果$f(x_1,x_2)=-ax_1-b_2$中的 $a$ 是未知的，就不能直接设计控制器，可以对未知参数$a$进行估计。
 
-对 $a$ 进行估计，估计值为 $\hat{a}$ ，估计误差为$\tilde{a}$，即$\tilde{a} = a - \hat{a}$，假设未知参数$a$是恒值，或变化率很慢，接近为零，所以估计值误差的变化率如下：
+对 $a$ 进行估计，估计值为 $\hat{a}$ ，估计误差为 $\tilde{a}$，即 $\tilde{a} = a - \hat{a}$，假设未知参数 $a$ 是恒值，或变化率很慢，接近为零，所以估计值误差的变化率如下：
 $$
 \dot{\tilde{a}} =\dot a -\dot{\hat{a}}  = -\dot{\hat{a}}   \tag{9}
 $$
@@ -492,7 +482,7 @@ $$
 $$
 
 
-为了使 $\dot V_2(e_1,e_2,e_3) <0$取控制率$u$如下：
+为了使 $\dot V_2(e_1,e_2,e_3) <0$取控制率 $u$如下：
 
 
 $$
@@ -500,7 +490,7 @@ u =\dot v_1(x_1) + e_1 +k_2e_2 +bx_2+\hat{a}x_1  				  \tag{12}
 $$
 
 
- 
+
 
 ### 参数已知仿真
 
